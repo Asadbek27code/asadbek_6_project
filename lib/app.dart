@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'pages/first_page.dart';
@@ -43,15 +44,37 @@ class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.transparent,
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: const Color.fromARGB(255, 30, 42, 51),
+        toolbarHeight: 70,
         title: const Text(
-          "Chat App",
+          "WhatsApp",
           style: TextStyle(
-              fontSize: 23, color: Colors.white, fontWeight: FontWeight.w700),
+              fontSize: 30, color: Colors.white, fontWeight: FontWeight.w400),
         ),
-        centerTitle: true,
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.camera_alt_outlined),
+            iconSize: 30,
+            color: const Color.fromARGB(255, 180, 180, 180),
+          ),
+          const SizedBox(
+            width: 10,
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.search),
+            iconSize: 30,
+            color: const Color.fromARGB(255, 180, 180, 180),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.more_vert),
+            iconSize: 30,
+            color: const Color.fromARGB(255, 180, 180, 180),
+          ),
+        ], // centerTitle: true,
       ),
       body: PageView(
         controller: controller,
@@ -60,26 +83,28 @@ class HomePageState extends State<HomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.transparent,
+        backgroundColor: const Color.fromARGB(255, 30, 42, 51),
         // fixedColor: Colors.transparent,
         elevation: 0,
         currentIndex: currentIndex,
-        selectedItemColor: Colors.red,
+        // selectedItemColor: Colors.red,
         unselectedItemColor: Colors.yellow,
         selectedFontSize: 20,
-        unselectedIconTheme: const IconThemeData(size: 15),
-        selectedIconTheme: const IconThemeData(
-          size: 55,
-        ),
+        // unselectedIconTheme: const IconThemeData(size: 15),
+
         onTap: nextPage,
         items: const [
           BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: "Home",
+              icon: Icon(Icons.chat),
+              label: "Chats",
+              activeIcon: Icon(Icons.chat)),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.search),
+              label: "Chat",
               activeIcon: Icon(Icons.done_all)),
           BottomNavigationBarItem(
-              icon: Icon(Icons.chat),
-              label: "Chat",
+              icon: Icon(Icons.person),
+              label: "Person",
               activeIcon: Icon(Icons.done_all)),
           BottomNavigationBarItem(
               icon: Icon(Icons.person),
