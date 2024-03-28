@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class FirstPage extends StatefulWidget {
-  const FirstPage({super.key});
+class ContactsPages extends StatefulWidget {
+  const ContactsPages({super.key});
 
   @override
-  State<FirstPage> createState() => _FirstPageState();
+  State<ContactsPages> createState() => _ContactsPagesState();
 }
 
-class _FirstPageState extends State<FirstPage> {
+class _ContactsPagesState extends State<ContactsPages> {
   late String currentTime;
 
   @override

@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class FirstPage extends StatefulWidget {
-  const FirstPage({super.key});
+class Allpage extends StatefulWidget {
+  const Allpage({super.key});
 
   @override
-  State<FirstPage> createState() => _FirstPageState();
+  State<Allpage> createState() => _AllpageState();
 }
 
-class _FirstPageState extends State<FirstPage> {
+class _AllpageState extends State<Allpage> {
   late String currentTime;
 
   @override
