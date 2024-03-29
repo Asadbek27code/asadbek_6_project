@@ -1,13 +1,14 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class FirstPage extends StatefulWidget {
-  const FirstPage({super.key});
+class CallsPage extends StatefulWidget {
+  const CallsPage({super.key});
 
   @override
-  State<FirstPage> createState() => _FirstPageState();
+  State<CallsPage> createState() => _CallsPageState();
 }
 
-class _FirstPageState extends State<FirstPage> {
+class _CallsPageState extends State<CallsPage> {
   late String currentTime;
 
   @override
@@ -114,10 +115,11 @@ Widget product(String product, BuildContext context, String user) {
                 "Asadbek ffffdfs",
                 style: TextStyle(fontSize: 20, color: Colors.white),
               ),
-              SizedBox(width: MediaQuery.of(context).size.width * 0.29),
+              SizedBox(width: MediaQuery.of(context).size.width * 0.2),
               const Icon(
-                Icons.push_pin_outlined,
+                Icons.call,
                 color: Colors.white,
+                size: 40,
               )
             ],
           ),

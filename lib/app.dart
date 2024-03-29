@@ -1,11 +1,9 @@
+import 'package:asadbek_6_project/pages/calls.dart';
 import 'package:asadbek_6_project/pages/first_paskage/all.dart';
 import 'package:asadbek_6_project/pages/first_paskage/contacts.dart';
 import 'package:asadbek_6_project/pages/first_paskage/groups.dart';
 import 'package:asadbek_6_project/pages/first_paskage/unread.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-
 import 'pages/first_page.dart';
 import 'pages/secound_page.dart';
 import 'pages/third_page.dart';
@@ -37,6 +35,7 @@ class HomePageState extends State<HomePage> {
     FirstPage(),
     SecondPage(),
     ThirdPage(),
+    CallsPage(),
   ];
 
   void nextPage(int index) {

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SecondPage extends StatefulWidget {
@@ -31,9 +30,12 @@ class _SecondPageState extends State<SecondPage> {
                   "Asadbek",
                   style: TextStyle(fontSize: 30, color: Colors.white),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(
+                  height: 20,
+                ),
                 Row(
                   children: [
+                    const SizedBox(width: 10),
                     const Text(
                       "Name :",
                       style: TextStyle(fontSize: 25, color: Colors.white),
@@ -51,6 +53,7 @@ class _SecondPageState extends State<SecondPage> {
                 const SizedBox(height: 20),
                 Row(
                   children: [
+                    const SizedBox(width: 10),
                     const Text(
                       "Lastname :",
                       style: TextStyle(fontSize: 25, color: Colors.white),
@@ -68,6 +71,7 @@ class _SecondPageState extends State<SecondPage> {
                 const SizedBox(height: 20),
                 Row(
                   children: [
+                    const SizedBox(width: 10),
                     const Text(
                       "Nicname :",
                       style: TextStyle(fontSize: 25, color: Colors.white),
@@ -85,6 +89,7 @@ class _SecondPageState extends State<SecondPage> {
                 const SizedBox(height: 20),
                 Row(
                   children: [
+                    const SizedBox(width: 10),
                     const Text(
                       "Parol :",
                       style: TextStyle(fontSize: 25, color: Colors.white),
@@ -108,6 +113,7 @@ class _SecondPageState extends State<SecondPage> {
                 const SizedBox(height: 20),
                 Row(
                   children: [
+                    const SizedBox(width: 10),
                     const Text(
                       "Country :",
                       style: TextStyle(fontSize: 25, color: Colors.white),
